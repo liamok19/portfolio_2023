@@ -1,0 +1,22 @@
+.bioDesc{
+    padding-top: 180px;
+    justify-content: center;
+    align-content: center;
+    padding-left: 30px;
+}
+
+.introDescription{
+    font-size: 1.6rem;
+    color: black;
+    /* text-align: center; */
+    align-content: center;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.additionalText{
+    font-size: 1.2rem;
+    color: black;    
+    padding-left: 40px;
+    padding-right: 40px;
+}
