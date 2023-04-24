@@ -1,3 +1,8 @@
+.aboutMeContainer{
+/* position: relative; */
+    z-index: 10;
+}
+
 .bioDesc{
     padding-top: 180px;
     justify-content: center;
@@ -19,4 +24,33 @@
     color: black;    
     padding-left: 40px;
     padding-right: 40px;
+}
+
+.img{
+    border-radius: 315px;
+    opacity: 50%;
+    width: 50%;
+    height: 50%;
+}
+
+.img:hover{
+    border-radius: 315px;
+    opacity: 100%;
+    cursor:crosshair ;
+
+}
+
+.row{
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* flex-wrap: wrap; */
+}
+
+.column-1{
+    /* width: 100%; */
+}
+
+.column-2{
+    /* flex: 0 0 auto; */
+    /* width: 33.33333333%; */
 }
