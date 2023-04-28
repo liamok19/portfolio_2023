@@ -13,7 +13,7 @@ export const MenuData = [
   },
   {
     title: "Contact",
-    url: "#",
+    url: "#Contact",
     cName: "nav-links",
     icon: "fa-solid fa-address-book",
   },
