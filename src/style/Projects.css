@@ -1,0 +1,118 @@
+/* deafult property for the border colour */
+#myDIV {
+    border-bottom: 4px solid #fc575f36 ;
+    animation: mymove 5s infinite;
+
+}
+
+/* title underline with a solid border and font size property */
+.webDevelopment {
+    border-bottom: 4px solid floralwhite ;
+    font-size: 30px;
+    
+}
+
+/* default border colour and border radius. Padding top to add buffer visually */
+
+.wd_projectContainer {
+    border-top: 4px solid #fc575f38 ;
+    border-radius: 80px;
+    /* border-top: 4px solid #fc575f ; */
+    padding-top: 45px;
+}
+
+/* 4 (b). Footer Propertes additional styling, animation */
+/* need to set original color for the hover function to work below */
+img .social-icon{
+    color: #fc575e;
+    transition: color 0.2s;
+    width: 2px;
+    height: 2px;  
+    margin: 1.5rem;
+}
+
+/*  */
+.social-icon:hover {
+    color: rebeccapurple;
+}
+
+.projectLogline{
+    font-size: 15px;
+}
+
+/* column attribute applied in bootstrap but margin left/right are set to auto for responsivness. Cursor pointer applied for visual understanding that the user can click on the element. */
+.wd_projects {
+    width: 20vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    cursor:pointer;
+
+}
+/* when the cursor hovers over this container it will grow in size. The growth speed has a property aswell */
+.wd_projects:hover{
+    transition: 500ms;
+    transform: scale(1.3);
+    
+}
+
+/* default border colour and border radius. Padding top to add buffer visually */
+
+.wd_projectContainer {
+    border-top: 4px solid #fc575f38 ;
+    border-radius: 80px;
+    /* border-top: 4px solid #fc575f ; */
+    padding-top: 45px;
+}
+
+
+/* title underline with a solid border and font size property */
+.animProduction {
+    border-bottom: 4px solid #fc575e ;
+    font-size: 30px;
+}
+
+/* default border colour and border radius. Padding top to add buffer visually */
+.anim_projectContainer {
+    border-bottom: 4px solid rgba(255, 250, 240, 0.205) ;
+    border-radius: 80px;
+    /* border-top: 4px solid floralwhite ; */
+    padding-top: 45px;
+
+}
+
+/* column attribute applied in bootstrap but margin left/right are set to auto for responsivness. Cursor pointer applied for visual understanding that the user can click on the element. */
+
+.anim_projects {
+    width: 20vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    cursor:pointer;
+}
+
+/* when the cursor hovers over this container it will grow in size. The growth speed has a property aswell */
+.anim_projects:hover{
+    transition: 500ms;
+    transform: scale(1.3);
+}
+
+/* addition padding to one element. */
+#animProject3 {
+    padding-top: 80px;
+}
+
+
+/* using flex direction column to stackimages an the details added to the container*/
+@media screen and (max-width: 768px){
+    .webDevelopment, 
+    .wd_projectContainer, 
+    .animProduction, 
+    .anim_projectContainer, 
+    .vfxProduction, .vfx_projectContainer {
+    width: 80vw;
+    text-align: center;
+    }
+} 

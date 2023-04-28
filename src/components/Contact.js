@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "../assets/images/liamo_headshot_01.JPG";
 import "../style/Contact.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Contact() {
   return (
