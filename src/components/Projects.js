@@ -1,6 +1,7 @@
 import React from "react";
 import Github from "../assets/images/github_icon.png";
 import "../style/Projects.css";
+import eHealth from "../assets/images/project_images/eHealthNSW_Logo.png";
 import eatCake from "../assets/images/project_images/Let_Them_Eat_Cake.gif";
 import cryptoMuggles from "../assets/images/project_images/final-look.gif";
 import pwGenerator from "../assets/images/project_images/Password Generator.gif";
@@ -86,12 +87,6 @@ export default function Projects() {
           <div className="innerBox">
             <img
               src={eatCake}
-              alt="nswHealthApp"
-              id="boxStyle"
-              className="firstBox"
-            />
-            <img
-              src={eatCake}
               alt="LetThemEatCake"
               id="boxStyle"
               className="secondBox"
@@ -128,7 +123,12 @@ export default function Projects() {
               id="boxStyle"
               className="ninthBox"
             />
-            <div class="image-holder"></div>
+            <img
+              src={eHealth}
+              alt="nswHealthApp"
+              id="boxStyle"
+              className="firstBox"
+            />
           </div>
         </div>
       </div>
