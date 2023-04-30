@@ -1,6 +1,14 @@
 import React from "react";
 import Github from "../assets/images/github_icon.png";
 import "../style/Projects.css";
+import eatCake from "../assets/images/project_images/Let_Them_Eat_Cake.gif";
+import cryptoMuggles from "../assets/images/project_images/final-look.gif";
+import pwGenerator from "../assets/images/project_images/Password Generator.gif";
+import whatIf from "../assets/images/whatif_2021.jpg";
+import MTB3 from "../assets/images/project_images/mayathebee3_logo.png";
+import Winchester from "../assets/images/project_images/winchester_img.jpg";
+import UnderWorld from "../assets/images/project_images/Underworld-blood-wars-movie-logo.png";
+import hundredWolf from "../assets/images/project_images/100_wolf_film.png";
 
 export default function Projects() {
   return (
@@ -76,13 +84,51 @@ export default function Projects() {
         </div>
         <div className="img_box">
           <div className="innerBox">
-            <div className="firstBox"></div>
-            <div className="secondBox"></div>
-            <div className="thirdBox"></div>
-            <div className="fourthBox"></div>
-            <div className="fifthBox"></div>
-            <div className="sixthBox"></div>
-            <div className="seventhBox"></div>
+            <img
+              src={eatCake}
+              alt="nswHealthApp"
+              id="boxStyle"
+              className="firstBox"
+            />
+            <img
+              src={eatCake}
+              alt="LetThemEatCake"
+              id="boxStyle"
+              className="secondBox"
+            />
+            <img
+              src={cryptoMuggles}
+              alt="CryptoMuggles"
+              id="boxStyle"
+              className="thirdBox"
+            />
+            <img
+              src={pwGenerator}
+              alt="pwgenerator"
+              id="boxStyle"
+              className="fourthBox"
+            />
+            <img src={whatIf} alt="whatIf" id="boxStyle" className="fifthBox" />
+            <img src={MTB3} alt="MTB3" id="boxStyle" className="sixthBox" />
+            <img
+              src={Winchester}
+              alt="Winchester"
+              id="boxStyle"
+              className="seventhBox"
+            />
+            <img
+              src={UnderWorld}
+              alt="UnderBlood"
+              id="boxStyle"
+              className="eighthBox"
+            />
+            <img
+              src={hundredWolf}
+              alt="100Wolf"
+              id="boxStyle"
+              className="ninthBox"
+            />
+            <div class="image-holder"></div>
           </div>
         </div>
       </div>

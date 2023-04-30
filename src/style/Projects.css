@@ -52,12 +52,91 @@
 }
 
 .img_box{
+    margin-left: 250px;
     display: flex;
     flex-direction: column;
 }
 
 .innerBox{
+    width: 80%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
+#boxStyle{
+    border: 3px solid rgb(5, 5, 5);
+}
+
+.firstBox{
+    background: rgba(173, 216, 230, 0.648);
+    width: 300px;
+    height: 300px;
+}
+.secondBox{
+    background: rgba(173, 216, 230, 0.648);
+    width: 200px;
+    height: 300px;
+}
+.thirdBox{
+    background: rgba(173, 216, 230, 0.648);
+    width: 250px;
+    height: 300px;
+}
+
+.fourthBox{
+    background: rgba(173, 216, 230, 0.648);
+    width: 100px;
+    height: 300px;
+}
+.fifthBox{
+    background: rgba(173, 216, 230, 0.648);
+    width: 180px;
+    height: 300px;
+}
+.sixthBox{
+    background: rgba(173, 216, 230, 0.648);
+    width: 180px;
+    height: 300px;
+}
+
+.seventhBox{
+    background: rgba(173, 216, 230, 0.648);
+    width: 285px;
+    height: 300px;
+}
+
+.eighthBox{
+    background: rgba(173, 216, 230, 0.648);
+    width: 300px;
+    height: 300px;
+}
+
+.ninthBox{
+    background: rgba(173, 216, 230, 0.648);
+    width: 300px;
+    height: 300px;
+}
+
+.image-holder {
+    background: url('http://i.imgur.com/5ln9Vmi.jpg');
+    height: 500px;
+    width: 500px;
+    position: relative;
+  }
+  
+  .image-holder::before {
+    content: '';
+    background: url('http://i.imgur.com/khYHDfJ.jpg');
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity .5s;
+  }
+  
+  .image-holder:hover::before {
+    opacity: .5; /* amount of opacity to blend the two images */
+  }
