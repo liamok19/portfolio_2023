@@ -11,7 +11,7 @@ export default function NavBar() {
 
   return (
     <nav className="NavbarItems">
-      <h1 className="NavbarTitle">Liam O'Kane</h1>
+      <h1 className="NavbarTitle"></h1>
       <div className="menu-icons" onClick={handleClick}>
         <i className={isMenuclicked ? "fas fa-times" : "fas fa-bars"}></i>
       </div>
