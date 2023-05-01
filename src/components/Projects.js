@@ -1,5 +1,4 @@
 import React from "react";
-import Github from "../assets/images/github_icon.png";
 import "../style/Projects.css";
 import eHealth from "../assets/images/project_images/eHealthNSW_Logo.png";
 import eatCake from "../assets/images/project_images/Let_Them_Eat_Cake.gif";
