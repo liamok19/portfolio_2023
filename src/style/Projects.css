@@ -15,12 +15,12 @@
 }
 
 .line{
-    margin-left: 40px;
+    margin-left: 60px;
     border-left: 3px solid rgb(5, 5, 5);
     height: 760px;
 }
 .arrow{
-    margin-left: 20px;
+    margin-left: 40px;
     width: 0;
     height: 0;
     border-left: 20px solid transparent;
@@ -29,7 +29,7 @@
 }
 
 .dot{
-    margin-left: 15px;
+    margin-left: 35px;
     background: rgb(5, 5, 5);
     border-radius: 50%;
     width: 50px;
@@ -38,7 +38,7 @@
 
 
 .year_line{
-    margin-left: 30px;
+    margin-left: 40px;
     font-size: 1.2rem;
     color: black;
     font-family: 'Kumbh Sans', sans-serif;
@@ -46,13 +46,13 @@
 
 .desc_prj{
     margin-left: 70px;
-    font-size: 0.5rem;
+    font-size: .5rem;
     color: rgba(0, 0, 0, 0.641);
     font-family: 'Kumbh Sans', sans-serif;
+    width: 250px;
 }
 
 .img_box{
-    margin-left: 250px;
     display: flex;
     flex-direction: column;
 }
@@ -66,47 +66,72 @@
 
 #boxStyle{
     border: 3px solid rgb(5, 5, 5);
-    /* width: 30%;
-    height: 40%; */
+    width: 30%;
+    height: 40%;
+    object-fit: contain;
+    margin: .1rem;
+    opacity: 1;
 }
 
-.firstBox{
-    width: 250px;
-    height: 90px;
-}
-.secondBox{
-    width: 200px;
-    height: 300px;
-}
-.thirdBox{
-    width: 250px;
-    height: 300px;
+.firstBox {
+    width: 100%;
+    height: auto;
+    padding-top: 20%;
+
 }
 
-.fourthBox{
-    width: 100px;
-    height: 300px;
-}
-.fifthBox{
-    width: 180px;
-    height: 300px;
-}
-.sixthBox{
-    width: 180px;
-    height: 300px;
+.secondBox {
+    width: 100%;
+    height: auto;
+    padding-top: 20%;
 }
 
-.seventhBox{
-    width: 285px;
-    height: 300px;
+.thirdBox {
+    width: 100%;
+    height: auto;
+    padding-top: 20%;
 }
 
-.eighthBox{
-    width: 300px;
-    height: 300px;
+
+.fourthBox {
+    width: 100%;
+    height: auto;
+    padding-top: 20%;
 }
 
-.ninthBox{
-    width: 300px;
-    height: 300px;
+.fifthBox {
+    width: 100%;
+    height: auto;
+    padding-top: 20%;
+}
+
+.sixthBox {
+    width: 100%;
+    height: auto;
+    padding-top: 20%;
+}
+
+.seventhBox {
+    width: 100%;
+    height: auto;
+    padding-top: 20%;
+}
+
+.eigthBox {
+    width: 100%;
+    height: auto;
+    padding-top: 20%;
+}
+
+.ninthBox {
+    width: 100%;
+    height: auto;
+    padding-top: 20%;
+}
+
+#boxStyle:hover{
+    opacity: 0.5;
+    border: 3px solid rgb(5, 5, 5);
+    cursor: crosshair;
+    object-fit: contain;
 }

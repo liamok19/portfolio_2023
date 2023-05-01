@@ -85,50 +85,60 @@ export default function Projects() {
         </div>
         <div className="img_box">
           <div className="innerBox">
-            <img
-              src={eatCake}
-              alt="LetThemEatCake"
+            <a
               id="boxStyle"
-              className="secondBox"
-            />
-            <img
-              src={cryptoMuggles}
-              alt="CryptoMuggles"
+              href={
+                "https://www.ehealth.nsw.gov.au/solutions/patient-experience/digital/nsw-health-app"
+              }
+            >
+              <img src={eHealth} alt="nswHealthApp" className="firstBox" />
+            </a>
+            <a id="boxStyle" href={"https://github.com/liamok19/cakeECommerce"}>
+              <img src={eatCake} alt="LetThemEatCake" className="secondBox" />
+            </a>
+            <a
               id="boxStyle"
-              className="thirdBox"
-            />
-            <img
-              src={pwGenerator}
-              alt="pwgenerator"
+              href={"https://github.com/liamok19/Crypto-Muggles"}
+            >
+              <img
+                src={cryptoMuggles}
+                alt="CryptoMuggles"
+                className="thirdBox"
+              />
+            </a>
+            <a
               id="boxStyle"
-              className="fourthBox"
-            />
-            <img src={whatIf} alt="whatIf" id="boxStyle" className="fifthBox" />
-            <img src={MTB3} alt="MTB3" id="boxStyle" className="sixthBox" />
-            <img
-              src={Winchester}
-              alt="Winchester"
+              href={"https://github.com/liamok19/passwordGeneratorJS"}
+            >
+              <img src={pwGenerator} alt="pwgenerator" className="fourthBox" />
+            </a>
+            <a id="boxStyle" href={"https://www.imdb.com/title/tt10168312/"}>
+              <img src={whatIf} alt="whatIf" className="fifthBox" />
+            </a>
+            <a
               id="boxStyle"
-              className="seventhBox"
-            />
-            <img
-              src={UnderWorld}
-              alt="UnderBlood"
+              href={"https://www.imdb.com/title/tt11792512/?ref_=nv_sr_srsg_0"}
+            >
+              <img src={MTB3} alt="MTB3" className="sixthBox" />
+            </a>
+            <a
               id="boxStyle"
-              className="eighthBox"
-            />
-            <img
-              src={hundredWolf}
-              alt="100Wolf"
+              href={"https://www.imdb.com/title/tt1072748/?ref_=nv_sr_srsg_3"}
+            >
+              <img src={Winchester} alt="Winchester" className="seventhBox" />
+            </a>
+            <a
               id="boxStyle"
-              className="ninthBox"
-            />
-            <img
-              src={eHealth}
-              alt="nswHealthApp"
+              href={"https://www.imdb.com/title/tt3717252/?ref_=fn_al_tt_1"}
+            >
+              <img src={UnderWorld} alt="UnderBlood" className="eigthBox" />
+            </a>
+            <a
               id="boxStyle"
-              className="firstBox"
-            />
+              href={"https://www.imdb.com/title/tt8774798/?ref_=fn_al_tt_1"}
+            >
+              <img src={hundredWolf} alt="100Wolf" className="ninthBox" />
+            </a>
           </div>
         </div>
       </div>
