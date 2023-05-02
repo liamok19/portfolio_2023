@@ -1,10 +1,12 @@
 import React from "react";
 import Image from "../assets/images/liamo_headshot_01.JPG";
 import "../style/Contact.css";
+import NavBar from "./NavBar";
 
 export default function Contact() {
   return (
     <>
+      <NavBar />
       <div className="contactContainer">
         <div className="row">
           <div id="Contact" className="contactCollection">

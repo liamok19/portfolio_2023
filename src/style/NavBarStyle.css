@@ -52,6 +52,23 @@
     display: none;
 }
 
+.logoStyle{
+    padding-top: 6rem;
+    padding-left: 5rem;
+    width: 150px;
+    height: 100px;
+    position: sticky;
+}
+
+.navStyle {
+    color: white;
+    padding: 0 15px 0 15px;
+}
+
+#navStyle {
+    padding: 0 5px 0 5px;
+}
+
 
 @media screen and (max-width: 850px) {
     .menu-icons {
@@ -65,7 +82,7 @@
     
     }
     .NavbarItems{
-        z-index: 99;
+        z-index: 2;
     }
 
     .nav-menu{
@@ -95,11 +112,18 @@
         display: block;
         widows: 100%;
         padding: 2rem 0;
-        color: #222;
+        color: #ffffff;
     }
 
     .nav-links:hover{
         background: rgba(255,255,255,0.25);
         backdrop-filter:blur(20px);
+    }
+    .logoStyle{
+        padding-top: 6rem;
+        padding-left: 2rem;
+        width: 100px;
+        height: 80px;
+        position: sticky;
     }
 }

@@ -1,5 +1,5 @@
 .page_container{
-    padding-top: 180px;
+    padding-top: 80px;
     display: flex;
     flex-direction: column;
 }
@@ -134,4 +134,48 @@
     border: 3px solid rgb(5, 5, 5);
     cursor: crosshair;
     object-fit: contain;
+}
+
+@media screen and (max-width: 768px) {
+    .page_container{
+        padding-top: 80px;
+        display: flex;
+        flex-direction: column;
+    }
+    .innerBox{
+        display: none;
+    }
+.arrow_gong{
+    margin-left: 0;
+}
+
+.line{
+    margin-left: 20px;
+    border-left: 1px solid rgb(5, 5, 5);
+    height: 810px;
+}
+.arrow{
+    margin-left: 10px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid rgb(5, 5, 5); 
+}
+
+.dot{
+    margin-left: 10px;
+    background: rgb(5, 5, 5);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+
+.year_line{
+    margin-left: 5px;
+    font-size: 1.2rem;
+    color: black;
+    font-family: 'Kumbh Sans', sans-serif;
+}
 }

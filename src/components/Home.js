@@ -1,18 +1,34 @@
 import "../style/HomeStyle.css";
-import NavBar from "../components/NavBar";
-import AboutMe from "../components/AboutMe";
-import Footer from "../components/Footer";
-import Contact from "./Contact";
-import Projects from "./Projects";
+// import NavBar from "../components/NavBar";
+// import AboutMe from "../components/AboutMe";
+// import Footer from "../components/Footer";
+// import Contact from "./Contact";
+// import Projects from "./Projects";
+
 import "../style/HomeStyle.css";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
     <div>
-      <NavBar />
       <h1 className="header"> Liam O'Kane</h1>
-      <button className="button-56">Click to Enter</button>
-      {/* <Footer /> */}
+      <div className="buttonContainer">
+        <button className="button-56">
+          <CustomLink id="listStyle" to="/AboutMe">
+            Click to Enter
+          </CustomLink>
+        </button>
+      </div>
+    </div>
+  );
+}
+
+function CustomLink({ to, children }) {
+  const path = window.location.pathname;
+
+  return (
+    <div id="listStyle" className={path === to ? "active" : ""}>
+      <Link to={to}>{children}</Link>
     </div>
   );
 }

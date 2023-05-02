@@ -3,12 +3,11 @@ import { Route, Routes } from "react-router-dom";
 import AboutMe from "./components/AboutMe";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
-import NavBar from "./components/NavBar";
+import Footer from "../src/components/Footer";
 
 function App() {
   return (
     <>
-      <NavBar />
       <div>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -17,6 +16,7 @@ function App() {
           <Route path="/Contact" element={<Contact />} />
         </Routes>
       </div>
+      <Footer />
     </>
   );
 }
