@@ -2,21 +2,23 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 0 30px;
-    background-color: #222;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.25) ;
+    /* background-color: #222; */
+    /* box-shadow: 0 5px 15px rgba(0,0,0,0.25) ; */
     width: 95%;
     height: 80px;
-    border-radius: 30px;
+    /* border-radius: 30px; */
     position:fixed;
-    top: 20px;
+    top: 80px;
     left: 50%;
     transform: translate(-50%);
+    /* background-color:#ff26be; */
+    color: #000000;
 }
 
 .NavbarTitle{
-    color: #fff;
+    /* color: #000000; */
     justify-self: start;
     cursor: crosshair;
     padding-left: 30px;
@@ -33,7 +35,7 @@
 
 .nav-links{
     text-decoration: none;
-    color: #fff;
+    color: #000000;
     padding: 0.7rem 1rem;
     padding-right: 50px;
     white-space: nowrap;
@@ -53,22 +55,29 @@
 }
 
 .logoStyle{
-    padding-top: 6rem;
+    padding-top: 2rem;
     padding-left: 5rem;
-    width: 150px;
-    height: 100px;
+    width: 110px;
+    height: 80px;
     position: sticky;
 }
 
 .navStyle {
-    color: white;
+    color: rgba(0, 0, 0, 0.624);
     padding: 0 15px 0 15px;
+    font-family: 'Kumbh Sans', sans-serif;
+    
 }
 
 #navStyle {
     padding: 0 5px 0 5px;
 }
 
+.navStyle:hover {
+    color: rgba(75, 11, 11, 0.624);
+    padding: 0 15px 0 15px;
+    font-family: 'Kumbh Sans', sans-serif;
+}
 
 @media screen and (max-width: 850px) {
     .menu-icons {
@@ -78,7 +87,7 @@
     
     .fa-bars, 
     .fa-times{
-        color: #fff;
+        color: #000000;
     
     }
     .NavbarItems{
@@ -89,9 +98,9 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        background-color: rgba(255,255,255,0.25);
-        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, .37);
-        backdrop-filter: blur(4px);
+        background-color: rgba(195, 246, 255, 0.25);
+        box-shadow: 0 8px 32px 0 rgb(63, 88, 93);
+        backdrop-filter: blur(5px);
         border-radius: 13px;
         width: 100%;
         height: auto;
@@ -117,13 +126,19 @@
 
     .nav-links:hover{
         background: rgba(255,255,255,0.25);
-        backdrop-filter:blur(20px);
+        /* backdrop-filter:blur(20px); */
     }
     .logoStyle{
-        padding-top: 6rem;
+        padding-top: 2rem;
         padding-left: 2rem;
         width: 100px;
         height: 80px;
         position: sticky;
+    }
+    .navStyle {
+        color: rgb(0, 0, 0);
+        padding: 10px 15px 10px 15px;
+        font-family: 'Kumbh Sans', sans-serif;
+        
     }
 }

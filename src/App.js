@@ -6,9 +6,22 @@ import Contact from "./components/Contact";
 import Footer from "../src/components/Footer";
 
 function App() {
+  const styles = {
+    ribbon: {
+      borderTop: "50px solid black",
+    },
+    middleRibbon: {
+      borderTop: "25px solid white",
+    },
+    btmRibbon: {
+      borderTop: "10px solid black",
+    },
+  };
   return (
     <>
-      <div>
+      <div style={styles.ribbon}>
+        <div style={styles.middleRibbon} />
+        <div style={styles.btmRibbon} />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/AboutMe" element={<AboutMe />} />

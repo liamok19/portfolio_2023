@@ -6,8 +6,11 @@ import Email from "../assets/images/email_icon.png";
 export default function Footer() {
   const styles = {
     footer: {
+      poition: "fixed",
       borderTop: "3px solid black",
-      // backgroundColor: "purple",
+      width: "100%",
+      // left: 0,
+      // bottom: 0,
       display: "flex",
       flexDirection: "row",
       justifyContent: "center",
