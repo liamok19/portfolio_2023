@@ -28,7 +28,9 @@ function CustomLink({ to, children }) {
 
   return (
     <div id="listStyle" className={path === to ? "active" : ""}>
-      <Link to={to}>{children}</Link>
+      <Link className="listStyle" to={to}>
+        {children}
+      </Link>
     </div>
   );
 }

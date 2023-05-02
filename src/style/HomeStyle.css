@@ -11,10 +11,10 @@ body{
     }
 
 .header {
-    padding-top: 90px;
-    padding-left: 20%;
+    padding-top: 10px;
+    padding-left: 10%;
     font-size: 3.2rem;
-    color: black;
+    color: rgba(125, 125, 125, 0.711);
     font-family: 'Kumbh Sans', sans-serif;
 }
 
@@ -49,9 +49,9 @@ body{
 .button-56:hover:after {
     transform: translate(0, 0);
 }
-#listStyle {
+.listStyle {
   text-decoration: none;
-  color: black;
+  color: rgba(131, 153, 153, 0.583);
 }
 
 .buttonContainer {
