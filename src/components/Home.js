@@ -13,11 +13,9 @@ export default function Home() {
     <div>
       <h1 className="header"> Liam O'Kane</h1>
       <div className="buttonContainer">
-        <button className="button-56">
-          <CustomLink id="listStyle" to="/AboutMe">
-            Click to Enter
-          </CustomLink>
-        </button>
+        <CustomLink id="listStyle" to="/AboutMe">
+          <button className="button-56">Click to Enter</button>
+        </CustomLink>
       </div>
     </div>
   );
