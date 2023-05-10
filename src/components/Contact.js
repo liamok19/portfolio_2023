@@ -6,6 +6,12 @@ import emailjs from "@emailjs/browser";
 export default function Contact() {
   const form = useRef();
 
+  function submitForm() {
+    document.getElementById("nameSubmit").value = "";
+    document.getElementById("emailSubmit").value = "";
+    document.getElementById("messageSubmit").value = "";
+  }
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -18,6 +24,7 @@ export default function Contact() {
       )
       .then(
         (result) => {
+          submitForm();
           console.log(result.text);
         },
         (error) => {
@@ -31,11 +38,11 @@ export default function Contact() {
       <NavBar />
       <form className="formContainer" ref={form} onSubmit={sendEmail}>
         <label>Name</label>
-        <input type="text" name="user_name" />
+        <input id="nameSubmit" type="text" name="user_name" />
         <label>Email</label>
-        <input type="email" name="user_email" />
+        <input id="emailSubmit" type="email" name="user_email" />
         <label>Message</label>
-        <textarea name="message" />
+        <textarea id="messageSubmit" name="message" />
         <input className="inputSubmit" type="submit" value="Send" />
       </form>
     </>

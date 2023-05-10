@@ -1,22 +1,19 @@
 import "../style/HomeStyle.css";
-// import NavBar from "../components/NavBar";
-// import AboutMe from "../components/AboutMe";
-// import Footer from "../components/Footer";
-// import Contact from "./Contact";
-// import Projects from "./Projects";
 
 import "../style/HomeStyle.css";
 import { Link } from "react-router-dom";
+import Icon from "../components/Icon";
 
 export default function Home() {
   return (
-    <div>
+    <div className="homeContainer">
       <h1 className="header"> Liam O'Kane</h1>
       <div className="buttonContainer">
         <CustomLink id="listStyle" to="/AboutMe">
           <button className="button-56">Click to Enter</button>
         </CustomLink>
       </div>
+      <Icon />
     </div>
   );
 }

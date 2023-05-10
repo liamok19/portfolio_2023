@@ -16,9 +16,13 @@ function App() {
     btmRibbon: {
       borderTop: "10px solid black",
     },
+    pageContent: {
+      minHeight: "100vh",
+      position: "relative",
+    },
   };
   return (
-    <>
+    <div style={styles.pageContent}>
       <div style={styles.ribbon}>
         <div style={styles.middleRibbon} />
         <div style={styles.btmRibbon} />
@@ -30,7 +34,7 @@ function App() {
         </Routes>
       </div>
       <Footer />
-    </>
+    </div>
   );
 }
 

@@ -6,11 +6,11 @@ import Email from "../assets/images/email_icon.png";
 export default function Footer() {
   const styles = {
     footer: {
-      poition: "fixed",
+      position: "absolute",
       borderTop: "3px solid black",
       width: "100%",
       // left: 0,
-      // bottom: 0,
+      bottom: 0,
       display: "flex",
       flexDirection: "row",
       justifyContent: "center",
@@ -28,18 +28,16 @@ export default function Footer() {
   let emailURL = "mailto:lokanedeveloper@gmail.com";
 
   return (
-    <>
-      <div style={styles.footer}>
-        <a href={gitHubURL}>
-          <img style={styles.img} src={Github} alt="Github"></img>
-        </a>
-        <a href={linkedinURL}>
-          <img style={styles.img} src={LinkedIn} alt="Linkedin"></img>
-        </a>
-        <a href={emailURL}>
-          <img style={styles.img} src={Email} alt="Email"></img>
-        </a>
-      </div>
-    </>
+    <div style={styles.footer}>
+      <a href={gitHubURL}>
+        <img style={styles.img} src={Github} alt="Github"></img>
+      </a>
+      <a href={linkedinURL}>
+        <img style={styles.img} src={LinkedIn} alt="Linkedin"></img>
+      </a>
+      <a href={emailURL}>
+        <img style={styles.img} src={Email} alt="Email"></img>
+      </a>
+    </div>
   );
 }
