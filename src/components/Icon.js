@@ -5,6 +5,7 @@ import JS from "../assets/images/Javascript.png";
 import Mongo from "../assets/images/MongoDB-Emblem.png";
 import ReactLogo from "../assets/images/React.png";
 import SQL from "../assets/images/SQL.png";
+import ThreeJS from "../assets/images/threejs.png";
 
 export default function Icon() {
   const styles = {
@@ -35,7 +36,7 @@ export default function Icon() {
           <img style={styles.imgStyling} src={JS} alt="js" />
         </div>
         <div style={styles.logo}>
-          <img style={styles.imgStyling} src={Mongo} alt="mongo" />
+          <img style={styles.imgStyling} src={ThreeJS} alt="threejs" />
         </div>
         <div style={styles.logo}>
           <img style={styles.imgStyling} src={ReactLogo} alt="react" />
