@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "../style/Projects.css";
 import eHealth from "../assets/images/project_images/eHealthNSW_Logo.png";
 import eatCake from "../assets/images/project_images/Let_Them_Eat_Cake.gif";
@@ -10,8 +10,79 @@ import Winchester from "../assets/images/project_images/winchester_img.jpg";
 import UnderWorld from "../assets/images/project_images/Underworld-blood-wars-movie-logo.png";
 import hundredWolf from "../assets/images/project_images/100_wolf_film.png";
 import NavBar from "./NavBar";
+// import { ScrollTrigger } from "gsap/all";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default function Projects() {
+  const skewElemRef = useRef(null);
+  const healthRef = useRef(null);
+  const cakeRef = useRef(null);
+  const cryptoRef = useRef(null);
+  const pwRef = useRef(null);
+  const marvelRef = useRef(null);
+  const mayaRef = useRef(null);
+  const winchesterRef = useRef(null);
+  const hundredWolfRef = useRef(null);
+
+  useEffect(() => {
+    // Initialize ScrollTrigger
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Set up the animation
+    let proxy = { skew: 0 };
+    let skewSetter = gsap.quickSetter(skewElemRef.current, "skewY", "deg");
+    let healthSetter = gsap.quickSetter(healthRef.current, "skewY", "deg");
+    let cakeSetter = gsap.quickSetter(cakeRef.current, "skewY", "deg");
+    let cryptoSetter = gsap.quickSetter(cryptoRef.current, "skewY", "deg");
+    let pwSetter = gsap.quickSetter(pwRef.current, "skewY", "deg");
+    let marvelSetter = gsap.quickSetter(marvelRef.current, "skewY", "deg");
+    let mayaSetter = gsap.quickSetter(mayaRef.current, "skewY", "deg");
+    let winchesterSetter = gsap.quickSetter(
+      winchesterRef.current,
+      "skewY",
+      "deg"
+    );
+    let hundredSetter = gsap.quickSetter(
+      hundredWolfRef.current,
+      "skewY",
+      "deg"
+    );
+
+    let clamp = gsap.utils.clamp(-20, 20);
+
+    ScrollTrigger.create({
+      onUpdate: (self) => {
+        let skew = clamp(self.getVelocity() / -300);
+        if (Math.abs(skew) > Math.abs(proxy.skew)) {
+          proxy.skew = skew;
+          gsap.to(proxy, {
+            skew: 0,
+            duration: 0.8,
+            ease: "power3",
+            overwrite: true,
+            onUpdate: () => [
+              skewSetter(proxy.skew),
+              healthSetter(proxy.skew),
+              cakeSetter(proxy.skew),
+              cryptoSetter(proxy.skew),
+              pwSetter(proxy.skew),
+              marvelSetter(proxy.skew),
+              mayaSetter(proxy.skew),
+              winchesterSetter(proxy.skew),
+              hundredSetter(proxy.skew),
+            ],
+          });
+        }
+      },
+    });
+
+    gsap.set(skewElemRef.current, {
+      transformOrigin: "right center",
+      force3D: true,
+    });
+  }, []);
+
   return (
     <>
       <NavBar />
@@ -88,20 +159,26 @@ export default function Projects() {
           <div className="img_box">
             <div className="innerBox">
               <a
+                className="skewElem"
+                ref={healthRef}
                 id="boxStyle"
                 href={
                   "https://www.ehealth.nsw.gov.au/solutions/patient-experience/digital/nsw-health-app"
                 }
               >
-                <img src={eHealth} alt="nswHealthApp" className="firstBox" />
+                <img className="firstBox" src={eHealth} alt="nswHealthApp" />
               </a>
               <a
+                ref={cakeRef}
+                className="skewElem"
                 id="boxStyle"
                 href={"https://github.com/liamok19/cakeECommerce"}
               >
                 <img src={eatCake} alt="LetThemEatCake" className="secondBox" />
               </a>
               <a
+                ref={cryptoRef}
+                className="skewElem"
                 id="boxStyle"
                 href={"https://github.com/liamok19/Crypto-Muggles"}
               >
@@ -112,6 +189,8 @@ export default function Projects() {
                 />
               </a>
               <a
+                ref={pwRef}
+                className="skewElem"
                 id="boxStyle"
                 href={"https://github.com/liamok19/passwordGeneratorJS"}
               >
@@ -121,10 +200,17 @@ export default function Projects() {
                   className="fourthBox"
                 />
               </a>
-              <a id="boxStyle" href={"https://www.imdb.com/title/tt10168312/"}>
+              <a
+                ref={marvelRef}
+                className="skewElem"
+                id="boxStyle"
+                href={"https://www.imdb.com/title/tt10168312/"}
+              >
                 <img src={whatIf} alt="whatIf" className="fifthBox" />
               </a>
               <a
+                ref={mayaRef}
+                className="skewElem"
                 id="boxStyle"
                 href={
                   "https://www.imdb.com/title/tt11792512/?ref_=nv_sr_srsg_0"
@@ -133,22 +219,28 @@ export default function Projects() {
                 <img src={MTB3} alt="MTB3" className="sixthBox" />
               </a>
               <a
+                ref={winchesterRef}
+                className="skewElem"
                 id="boxStyle"
                 href={"https://www.imdb.com/title/tt1072748/?ref_=nv_sr_srsg_3"}
               >
                 <img src={Winchester} alt="Winchester" className="seventhBox" />
               </a>
               <a
+                ref={hundredWolfRef}
+                className="skewElem"
                 id="boxStyle"
                 href={"https://www.imdb.com/title/tt3717252/?ref_=fn_al_tt_1"}
               >
                 <img src={UnderWorld} alt="UnderBlood" className="eigthBox" />
               </a>
               <a
+                ref={skewElemRef}
+                className="skewElem"
                 id="boxStyle"
                 href={"https://www.imdb.com/title/tt8774798/?ref_=fn_al_tt_1"}
               >
-                <img src={hundredWolf} alt="100Wolf" className="ninthBox" />
+                <img className="ninthBox" src={hundredWolf} alt="100Wolf" />
               </a>
             </div>
           </div>
