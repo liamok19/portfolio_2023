@@ -7,8 +7,11 @@ import Icon from "../components/Icon";
 export default function Home() {
   return (
     <div className="homeContainer">
-      <h1 className="header"> Liam O'Kane</h1>
-      <div className="buttonContainer">
+      <h1 tabIndex={0} className="header">
+        {" "}
+        Liam O'Kane
+      </h1>
+      <div tabIndex={0} className="buttonContainer">
         <CustomLink id="listStyle" to="/AboutMe">
           <button className="button-56">Click to Enter</button>
         </CustomLink>

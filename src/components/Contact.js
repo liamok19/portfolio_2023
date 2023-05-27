@@ -37,11 +37,11 @@ export default function Contact() {
     <>
       <NavBar />
       <form className="formContainer" ref={form} onSubmit={sendEmail}>
-        <label>Name</label>
+        <label tabIndex={0}>Name</label>
         <input id="nameSubmit" type="text" name="user_name" />
-        <label>Email</label>
+        <label tabIndex={0}>Email</label>
         <input id="emailSubmit" type="email" name="user_email" />
-        <label>Message</label>
+        <label tabIndex={0}>Message</label>
         <textarea id="messageSubmit" name="message" />
         <input className="inputSubmit" type="submit" value="Send" />
       </form>

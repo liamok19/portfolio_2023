@@ -136,6 +136,9 @@
     cursor: crosshair;
     object-fit: contain;
 }
+#boxStyle:focus{
+    border: solid rgb(255, 157, 0);
+}
 
 @media screen and (max-width: 768px) {
     .page_container{

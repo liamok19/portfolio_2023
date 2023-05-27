@@ -28,7 +28,7 @@ export default function Footer() {
   let emailURL = "mailto:lokanedeveloper@gmail.com";
 
   return (
-    <div style={styles.footer}>
+    <div tabIndex={0} style={styles.footer}>
       <a href={gitHubURL}>
         <img style={styles.img} src={Github} alt="Github"></img>
       </a>

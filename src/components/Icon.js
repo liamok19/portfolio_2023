@@ -24,25 +24,61 @@ export default function Icon() {
     },
   };
   return (
-    <div class="container">
+    <div tabIndex={0} class="container">
       <div style={styles.rowStyle}>
         <div style={styles.logo}>
-          <img style={styles.imgStyling} src={HTML} alt="html" />
+          <img
+            aria-label="html"
+            tabIndex={0}
+            style={styles.imgStyling}
+            src={HTML}
+            alt="html"
+          />
         </div>
         <div style={styles.logo}>
-          <img style={styles.imgStyling} src={CSS} alt="css" />
+          <img
+            aria-label="css"
+            tabIndex={0}
+            style={styles.imgStyling}
+            src={CSS}
+            alt="css"
+          />
         </div>
         <div style={styles.logo}>
-          <img style={styles.imgStyling} src={JS} alt="js" />
+          <img
+            aria-label="js"
+            tabIndex={0}
+            style={styles.imgStyling}
+            src={JS}
+            alt="js"
+          />
         </div>
         <div style={styles.logo}>
-          <img style={styles.imgStyling} src={ThreeJS} alt="threejs" />
+          <img
+            aria-label="threejs"
+            tabIndex={0}
+            style={styles.imgStyling}
+            src={ThreeJS}
+            alt="threejs"
+          />
         </div>
         <div style={styles.logo}>
-          <img style={styles.imgStyling} src={ReactLogo} alt="react" />
+          <img
+            aria-label="react"
+            tabIndex={0}
+            style={styles.imgStyling}
+            src={ReactLogo}
+            alt="react"
+          />
         </div>
         <div style={styles.logo}>
-          <img style={styles.imgStyling} src={SQL} alt="sql" />
+          <img
+            aria-label="sql"
+            tabIndex={0}
+            style={styles.imgStyling}
+            src={SQL}
+            alt="sql"
+          />
         </div>
       </div>
     </div>

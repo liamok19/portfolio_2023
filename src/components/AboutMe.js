@@ -11,7 +11,7 @@ export default function AboutMe() {
         <div className="row">
           <div id="AboutMe" className="aboutMeCollection">
             <div className="column-1">
-              <h2 className="introDescription">
+              <h2 tabIndex={0} className="introDescription">
                 Aloha, I'm Liam, Li, Leeham and my list of nicknames continues
                 to grow. I'm a Full Stack Developer with extensive experience
                 with server side and client side applications.I attended the
@@ -24,7 +24,7 @@ export default function AboutMe() {
                 Stack Web Development course I learnt best practices for
                 designing powerful mobile-friendly websites and applications.
               </h2>
-              <h3 className="additionalText">
+              <h3 tabIndex={0} className="additionalText">
                 A fabulous thing about me is that I have traded dancing on stage
                 for dancing in the kitchen. Despite the fact that it has no
                 relevance to programming, it contributes to the upbeat nature I
@@ -32,7 +32,7 @@ export default function AboutMe() {
               </h3>
             </div>
             <div className="column-2">
-              <img className="img" src={Image} alt="Headshot" />
+              <img tabIndex={0} className="img" src={Image} alt="Headshot" />
             </div>
           </div>
         </div>
